@@ -1,0 +1,14 @@
+<h2>
+  Tweet form
+</h2>
+
+<%= form_with scope: :tweet, local: true do |form| %>
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_field :content %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
